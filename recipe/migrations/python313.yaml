@@ -31,6 +31,3 @@ __migrator:
 
 python:
 - 3.13.* *_cp313
-# additional entries to add for zip_keys
-is_python_min:
-- false

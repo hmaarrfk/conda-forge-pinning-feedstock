@@ -38,7 +38,5 @@ python:
 # additional entries to add for zip_keys
 is_freethreading:
 - true
-is_python_min:
-- false
 is_abi3:
 - false

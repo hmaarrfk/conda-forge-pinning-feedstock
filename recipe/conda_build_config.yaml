@@ -192,9 +192,6 @@ zip_keys:
     - cuda_compiler             # [win64 and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
     - cuda_compiler_version     # [win64 and os.environ.get("CF_CUDA_ENABLED", "False") == "True"]
   -
-    - python
-    - is_python_min
-  -
     - libarrow
     - libarrow_all
 
@@ -850,7 +847,6 @@ pulseaudio_daemon:
 pybind11_abi:
   - 4
 python:
-  # part of a zip_keys: python, is_python_min
   - 3.9.* *_cpython
   - 3.10.* *_cpython
   - 3.11.* *_cpython
@@ -862,12 +858,6 @@ python_min:
   # bump to next minor version when we drop python versions
   - '3.9'
 is_freethreading:
-  - false
-is_python_min:
-  # part of a zip_keys: python, python_impl, is_python_min
-  - true
-  - false
-  - false
   - false
 is_abi3:
   - true
